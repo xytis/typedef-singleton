@@ -69,7 +69,7 @@ class Singleton
       return m_pInstance.valid() ? m_pInstance : (m_pInstance.create(), m_pInstance);
     }
 
-,   // Manually destroy an existing instance. Call at end of program to clean up.
+   // Manually destroy an existing instance. Call at end of program to clean up.
     static void destroy()
     {
       if (m_pInstance.valid())
